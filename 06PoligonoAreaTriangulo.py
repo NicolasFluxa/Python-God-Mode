@@ -10,7 +10,7 @@ class poligono:
 
     # Este método permite al usuario ingresar la longitud de cada lado del polígono.
     def ingresarLados(self):
-        self.lados =[float(input("Ingrese lado" + str (i+1) + ": ")) for i in range(self.n)]
+        self.lados = [float(input("Ingrese lado" + str(i+1) + ": ")) for i in range(self.n)]
 
     # Este método imprime la longitud de cada lado del polígono.
     def mostrarLados(self):
@@ -18,6 +18,8 @@ class poligono:
             print("lado", i+1, "es ", self.lados[i])
 
 # Aquí se define una clase llamada 'triangulo' que hereda de la clase 'poligono'.
+
+
 class triangulo(poligono):
     # Este es el método constructor de la clase 'triangulo'.
     # Se llama automáticamente cuando se crea un objeto de la clase 'triangulo'.
@@ -36,6 +38,8 @@ class triangulo(poligono):
 # Estas líneas crean un objeto de la clase 'triangulo',
 # permiten al usuario ingresar las longitudes de los lados,
 # muestran las longitudes de los lados y calculan y muestran el área del triángulo.
+
+
 t = triangulo()
 t.ingresarLados()
 t.mostrarLados()
