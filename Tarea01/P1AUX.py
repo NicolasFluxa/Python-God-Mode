@@ -25,9 +25,15 @@ def calcular_numero_binomial(n):  # Esta función genera el Triángulo de Pascal
 # Esta función imprime el Triángulo de Pascal.
 def imprimir_triangulo_pascal(triangulo):
     # Iteramos sobre cada fila en el triángulo.
-    for i in triangulo:
-        # Imprimimos la fila.
-        print(i)
+    for i in range(len(triangulo)):
+        # Imprime espacios en blanco para alinear correctamente los números.
+        print(" " * (len(triangulo) - i), end="")
+        # Itera sobre el rango de números en la fila actual.
+        for j in range(i + 1):
+            # Imprime el número actual seguido de un espacio.
+            print(triangulo[i][j], end=" ")
+        # Imprime un salto de línea después de cada fila.
+        print()
 
 
 # Este es el punto de entrada principal del programa.
